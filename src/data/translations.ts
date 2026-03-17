@@ -1,0 +1,444 @@
+import type { Lang } from '../types'
+
+type Translations = Record<Lang, any>
+
+export const translations: Translations = {
+  es: {
+    nav: { inicio: "Inicio", tours: "Tours", nosotros: "Nosotros", media: "Media", contacto: "Contacto", reservar: "Reservar" },
+    hero: {
+      badge: "Agencia local en Cusco",
+      title1: "Descubre la magia de",
+      titleHighlight: "Cusco",
+      subtitle: "Tours auténticos con guías locales. Machu Picchu, Montaña 7 Colores, Valle Sagrado y más — atención personalizada en cada aventura.",
+      cta1: "Ver Tours", cta2: "WhatsApp",
+      stat1: "Viajeros felices", stat2: "Tours disponibles", stat3: "En TripAdvisor", scroll: "Scroll"
+    },
+    featured: { label: "Más populares", title: "Tours Destacados", seeAll: "Ver todos los tours →", details: "Ver detalles →", from: "Desde" },
+    commitments: {
+      label: "Nuestras garantías", title: "¿Por qué elegirnos?",
+      items: [
+        { icon: "🛡️", title: "Seguridad Certificada", desc: "Equipos certificados y protocolos estrictos en cada aventura." },
+        { icon: "🗣️", title: "Guías Bilingües", desc: "Profesionales que hablan español e inglés y conocen cada rincón." },
+        { icon: "💰", title: "Precio Directo", desc: "Sin intermediarios. Reserva directa al mejor precio garantizado." },
+        { icon: "📱", title: "Atención 24/7", desc: "Te asesoramos por WhatsApp o llamada cuando lo necesites." }
+      ]
+    },
+    cta: { label: "¿Listo?", title: "Arma tu aventura hoy", desc: "Escríbenos por WhatsApp y diseñamos tu itinerario ideal. Respuesta inmediata, sin compromiso.", btn: "Escríbenos por WhatsApp" },
+    toursPage: { label: "Experiencias", title: "Todos Nuestros Tours", desc: "Desde caminatas de medio día hasta trekkings de 5 días. Encuentra tu aventura ideal.", all: "Todos", fullDay: "Full Day", multiDay: "Multi-día" },
+    tourDetail: {
+      back: "← Volver a Tours", itinerary: "Itinerario", includes: "Incluye", notIncludes: "No incluye",
+      priceLabel: "Precio por persona", priceNote: "Precio por persona. Grupos grandes consultar descuento.", reserveBtn: "Reservar por WhatsApp",
+      whatsappMsg: "Hola, quiero reservar"
+    },
+    about: {
+      label: "Nuestra historia", title: "Sobre Green Golden Cusco",
+      paragraphs: [
+        "Somos una agencia de turismo local fundada en Cusco por cusqueños. Nacimos con la convicción de que la mejor forma de conocer nuestra tierra es con quienes la viven a diario.",
+        "No somos intermediarios. Diseñamos cada tour personalmente, seleccionamos a nuestros guías por su pasión y conocimiento, y nos aseguramos de que cada viajero sienta la autenticidad de los Andes.",
+        "Desde trekking de alta montaña hasta recorridos culturales por la ciudad, nuestra misión es conectar a los viajeros con la esencia de Cusco de forma segura, responsable y memorable."
+      ],
+      valuesTitle: "Nuestros Valores",
+      values: [
+        { icon: "🌱", title: "Turismo Responsable", desc: "Respetamos el medio ambiente y las comunidades locales." },
+        { icon: "🤝", title: "Autenticidad", desc: "Experiencias reales, no guiones turísticos genéricos." },
+        { icon: "⭐", title: "Excelencia", desc: "Cada detalle importa. Desde el transporte hasta la guía." },
+        { icon: "❤️", title: "Pasión", desc: "Amamos nuestra tierra y eso se nota en cada tour." }
+      ],
+      teamTitle: "Nuestro Equipo",
+      team: [
+        { name: "Carlos Quispe", role: "Fundador & Guía Principal", exp: "12 años de experiencia", emoji: "👨‍💼" },
+        { name: "María Huamán", role: "Coordinadora de Tours", exp: "8 años en turismo", emoji: "👩‍💼" },
+        { name: "Diego Condori", role: "Guía de Trekking", exp: "Certificado en alta montaña", emoji: "🧗" },
+        { name: "Luz Mamani", role: "Atención al Cliente", exp: "Bilingüe español-inglés", emoji: "💬" }
+      ],
+      legalTitle: "📄 Legalidades",
+      legalDesc: "Green Golden Cusco es una empresa formalmente constituida, registrada en SUNAT y autorizada por DIRCETUR Cusco para operar servicios turísticos.",
+      legalBadges: ["RUC Activo", "DIRCETUR Autorizado", "Libro de Reclamaciones"]
+    },
+    mediaPage: {
+      label: "Galería", title: "Media", desc: "Imágenes y momentos de nuestros tours por Cusco y alrededores.", all: "Todas",
+      videoTitle: "Multimedia", videoDesc: "Próximamente videos de nuestros tours. Síguenos en redes para ver contenido actualizado."
+    },
+    contact: {
+      label: "Hablemos", title: "Contacto", desc: "¿Tienes preguntas? Escríbenos y te respondemos al instante.",
+      formTitle: "Envíanos un mensaje", name: "Nombre", email: "Correo", subject: "Asunto", message: "Tu mensaje...", send: "Enviar Mensaje",
+      sent: "¡Mensaje enviado! Te responderemos pronto.",
+      whatsappTitle: "💬 WhatsApp (Respuesta rápida)", emailTitle: "📧 Correo", addressTitle: "📍 Dirección",
+      hoursTitle: "🕐 Horario", hours1: "Lunes a Sábado: 7:00 AM – 9:00 PM", hours2: "Domingo: 8:00 AM – 6:00 PM",
+      socialTitle: "🌐 Redes Sociales"
+    },
+    footer: {
+      desc: "Agencia de turismo local en Cusco. Tours auténticos con atención personalizada.",
+      menu: "Menú", popularTours: "Tours Populares", contactLabel: "Contacto",
+      terms: "Términos y Condiciones", complaints: "Libro de Reclamaciones", rights: "Todos los derechos reservados."
+    },
+    tours: [
+      { id: "machu-picchu", name: "Machu Picchu", tag: "Maravilla del Mundo", duration: "Full Day", price: "S/. 350",
+        description: "Descubre la ciudadela inca más emblemática del planeta, rodeada de montañas y misterio ancestral.",
+        longDescription: "Machu Picchu es una de las 7 maravillas del mundo moderno y el destino más visitado de Sudamérica. Nuestro tour te lleva desde Cusco en un viaje que combina historia, naturaleza y una energía única.",
+        includes: ["Transporte Cusco – Ollantaytambo – Aguas Calientes", "Tren turístico ida y vuelta", "Bus subida/bajada a Machu Picchu", "Entrada a Machu Picchu", "Guía profesional bilingüe", "Asistencia permanente"],
+        notIncludes: ["Alimentación", "Propinas", "Gastos personales"],
+        itinerary: [{ time: "4:00 AM", text: "Recojo del hotel" }, { time: "6:30 AM", text: "Tren desde Ollantaytambo" }, { time: "8:30 AM", text: "Bus a Machu Picchu" }, { time: "9:00 AM", text: "Tour guiado (2.5 hrs)" }, { time: "12:00 PM", text: "Tiempo libre" }, { time: "2:00 PM", text: "Almuerzo en Aguas Calientes" }, { time: "4:30 PM", text: "Tren de retorno" }, { time: "8:00 PM", text: "Llegada a Cusco" }],
+        difficulty: "Fácil", altitude: "2,430 m", groupSize: "Máx. 16" },
+      { id: "montana-7-colores", name: "Montaña 7 Colores", tag: "Ícono Natural", duration: "Full Day", price: "S/. 80",
+        description: "Camina entre paisajes surrealistas hasta uno de los escenarios más impresionantes del Perú.",
+        longDescription: "Vinicunca, la famosa Montaña de 7 Colores, muestra capas minerales en tonos rojizos, turquesas, dorados y lavanda. Una caminata exigente pero absolutamente gratificante.",
+        includes: ["Transporte Cusco – Vinicunca – Cusco", "Desayuno buffet en ruta", "Guía bilingüe", "Kit primeros auxilios y oxígeno", "Bastones de trekking"],
+        notIncludes: ["Almuerzo (S/. 15)", "Caballo de apoyo (S/. 80)", "Propinas"],
+        itinerary: [{ time: "3:30 AM", text: "Recojo del hotel" }, { time: "6:00 AM", text: "Desayuno en Cusipata" }, { time: "7:30 AM", text: "Inicio caminata (5 km)" }, { time: "10:00 AM", text: "Llegada a la cumbre" }, { time: "11:00 AM", text: "Descenso" }, { time: "1:00 PM", text: "Almuerzo opcional" }, { time: "5:00 PM", text: "Llegada a Cusco" }],
+        difficulty: "Moderada-Alta", altitude: "5,200 m", groupSize: "Máx. 15" },
+      { id: "laguna-humantay", name: "Laguna Humantay", tag: "Naturaleza Pura", duration: "Full Day", price: "S/. 70",
+        description: "Una laguna turquesa al pie de glaciares milenarios. Un espectáculo visual inolvidable.",
+        longDescription: "La Laguna Humantay es una joya escondida en los Andes cusqueños. Sus aguas turquesa intenso, alimentadas por el deshielo del nevado Humantay, crean un paisaje irreal.",
+        includes: ["Transporte ida y vuelta", "Desayuno en ruta", "Guía bilingüe", "Kit primeros auxilios", "Bastones de trekking"],
+        notIncludes: ["Almuerzo", "Caballo de apoyo (S/. 70)", "Entrada laguna (S/. 10)", "Propinas"],
+        itinerary: [{ time: "4:00 AM", text: "Recojo del hotel" }, { time: "6:30 AM", text: "Desayuno en Mollepata" }, { time: "7:30 AM", text: "Inicio caminata" }, { time: "9:30 AM", text: "Arribo a la laguna" }, { time: "11:00 AM", text: "Descenso" }, { time: "12:30 PM", text: "Almuerzo opcional" }, { time: "5:00 PM", text: "Retorno a Cusco" }],
+        difficulty: "Moderada", altitude: "4,200 m", groupSize: "Máx. 16" },
+      { id: "city-tour", name: "City Tour Cusco", tag: "Centro Histórico", duration: "Medio Día", price: "S/. 50",
+        description: "Recorre la esencia de la ciudad imperial: Sacsayhuamán, Qenqo, la Catedral y el Qoricancha.",
+        longDescription: "Un recorrido por los puntos más emblemáticos de la antigua capital del Imperio Inca. La fusión perfecta entre arquitectura inca y colonial.",
+        includes: ["Transporte turístico", "Guía bilingüe", "Recorrido por 6 sitios históricos"],
+        notIncludes: ["Boleto turístico (S/. 70)", "Entrada Catedral (S/. 25)", "Entrada Qoricancha (S/. 15)", "Alimentación"],
+        itinerary: [{ time: "1:00 PM", text: "Recojo del hotel" }, { time: "1:20 PM", text: "Qoricancha" }, { time: "2:30 PM", text: "Catedral del Cusco" }, { time: "3:30 PM", text: "Sacsayhuamán" }, { time: "4:30 PM", text: "Qenqo" }, { time: "5:00 PM", text: "Puca Pucara y Tambomachay" }, { time: "6:00 PM", text: "Retorno al hotel" }],
+        difficulty: "Fácil", altitude: "3,400 m", groupSize: "Máx. 16" },
+      { id: "7-lagunas", name: "7 Lagunas Ausangate", tag: "Aventura Andina", duration: "Full Day", price: "S/. 90",
+        description: "Siete lagunas de colores intensos rodeadas de montañas nevadas. Para amantes del trekking.",
+        longDescription: "El circuito de las 7 Lagunas te lleva a través de paisajes altoandinos espectaculares, con lagunas del turquesa al esmeralda, rodeadas por glaciares del Ausangate.",
+        includes: ["Transporte ida y vuelta", "Desayuno buffet", "Guía bilingüe", "Kit primeros auxilios", "Bastones"],
+        notIncludes: ["Almuerzo", "Caballo de apoyo (S/. 80)", "Propinas"],
+        itinerary: [{ time: "3:00 AM", text: "Recojo del hotel" }, { time: "5:30 AM", text: "Desayuno en Checacupe" }, { time: "7:00 AM", text: "Inicio trekking" }, { time: "8:30 AM", text: "Primera laguna" }, { time: "10:00 AM", text: "Recorrido 7 lagunas" }, { time: "12:30 PM", text: "Punto más alto" }, { time: "1:30 PM", text: "Descenso y almuerzo" }, { time: "6:00 PM", text: "Retorno a Cusco" }],
+        difficulty: "Alta", altitude: "4,800 m", groupSize: "Máx. 15" },
+      { id: "camino-inca", name: "Camino Inca Clásico", tag: "Trekking Legendario", duration: "4D / 3N", price: "S/. 1,800",
+        description: "La ruta ancestral de 43 km hasta Machu Picchu. Campamentos, ruinas y paisajes que cambian tu vida.",
+        longDescription: "El Camino Inca Clásico de 4 días es uno de los mejores trekkings del mundo. 43 km de senderos incas originales, 3 pasos de montaña y amanecer en la Puerta del Sol.",
+        includes: ["Permisos Camino Inca y Machu Picchu", "Guía bilingüe", "Cocinero y porteadores", "Todas las comidas", "Equipo de campamento", "Bus bajada y tren retorno"],
+        notIncludes: ["Saco de dormir (S/. 50)", "Bastones (S/. 30)", "Propinas", "Último almuerzo"],
+        itinerary: [{ time: "Día 1", text: "Km 82 → Wayllabamba (12 km)" }, { time: "Día 2", text: "Wayllabamba → Pacaymayo (11 km) – Paso Dead Woman" }, { time: "Día 3", text: "Pacaymayo → Wiñay Wayna (16 km)" }, { time: "Día 4", text: "Wiñay Wayna → Machu Picchu (4 km)" }],
+        difficulty: "Alta", altitude: "4,215 m (máx)", groupSize: "Máx. 8" },
+      { id: "salkantay", name: "Salkantay Trekking", tag: "Ruta Alternativa", duration: "5D / 4N", price: "S/. 1,200",
+        description: "La alternativa épica al Camino Inca. Glaciares, selva alta y Machu Picchu en 5 días.",
+        longDescription: "El Salkantay Trek es la ruta alternativa más popular. Atraviesa paisajes desde glaciares a 4,600m hasta selva tropical, pasando por comunidades andinas.",
+        includes: ["Transporte y traslados", "Guía bilingüe", "Cocinero y arrieros", "Todas las comidas", "Campamento completo", "Entrada Machu Picchu", "Tren retorno"],
+        notIncludes: ["Saco de dormir (S/. 50)", "Bastones (S/. 30)", "Aguas termales (S/. 10)", "Propinas"],
+        itinerary: [{ time: "Día 1", text: "Cusco → Soraypampa" }, { time: "Día 2", text: "Paso Salkantay (4,630m)" }, { time: "Día 3", text: "Descenso a selva alta" }, { time: "Día 4", text: "Cafetales → Aguas Calientes" }, { time: "Día 5", text: "Machu Picchu → Cusco" }],
+        difficulty: "Alta", altitude: "4,630 m (máx)", groupSize: "Máx. 12" },
+      { id: "lares", name: "Lares Trekking", tag: "Cultura Viva", duration: "4D / 3N", price: "S/. 950",
+        description: "Trekking cultural por comunidades quechuas, aguas termales y paisajes andinos auténticos.",
+        longDescription: "El Trek de Lares es la ruta más cultural. Atraviesa comunidades quechuas con tradiciones ancestrales, montañas, lagunas y valles que culminan en Machu Picchu.",
+        includes: ["Transporte", "Guía bilingüe", "Cocinero y arrieros", "Todas las comidas", "Campamento", "Entrada Machu Picchu", "Tren retorno", "Aguas termales de Lares"],
+        notIncludes: ["Saco de dormir (S/. 50)", "Bastones (S/. 30)", "Propinas"],
+        itinerary: [{ time: "Día 1", text: "Cusco → Lares – Aguas termales" }, { time: "Día 2", text: "Lares → Patacancha" }, { time: "Día 3", text: "Patacancha → Ollantaytambo" }, { time: "Día 4", text: "Machu Picchu → Cusco" }],
+        difficulty: "Moderada", altitude: "4,400 m (máx)", groupSize: "Máx. 12" },
+      { id: "palccoyo", name: "Palccoyo", tag: "7 Colores Alternativo", duration: "Full Day", price: "S/. 70",
+        description: "Tres montañas de colores con caminata suave. La alternativa perfecta a Vinicunca.",
+        longDescription: "Palccoyo ofrece tres montañas de colores, un bosque de piedras y vistas espectaculares con caminata menos exigente. Ideal para quienes quieren la experiencia sin esfuerzo extremo.",
+        includes: ["Transporte ida y vuelta", "Desayuno buffet", "Guía bilingüe", "Kit primeros auxilios"],
+        notIncludes: ["Entrada Palccoyo (S/. 10)", "Almuerzo", "Propinas"],
+        itinerary: [{ time: "4:00 AM", text: "Recojo del hotel" }, { time: "6:30 AM", text: "Desayuno en Checacupe" }, { time: "8:30 AM", text: "Inicio caminata (3 km)" }, { time: "9:30 AM", text: "Primera montaña" }, { time: "10:30 AM", text: "Bosque de piedras" }, { time: "11:30 AM", text: "Retorno" }, { time: "5:00 PM", text: "Llegada a Cusco" }],
+        difficulty: "Fácil", altitude: "4,900 m", groupSize: "Máx. 16" }
+    ],
+    gallery: [
+      { title: "Machu Picchu al amanecer", cat: "Machu Picchu", emoji: "🌅" },
+      { title: "Cima Montaña 7 Colores", cat: "Montaña 7C", emoji: "🌈" },
+      { title: "Laguna Humantay", cat: "Lagunas", emoji: "💎" },
+      { title: "Sacsayhuamán", cat: "City Tour", emoji: "🏛️" },
+      { title: "Valle Sagrado", cat: "Valle", emoji: "🏞️" },
+      { title: "Puerta del Sol", cat: "Trekking", emoji: "🚶" },
+      { title: "Grupo en la cima", cat: "Grupos", emoji: "👥" },
+      { title: "Comida cusqueña", cat: "Cultura", emoji: "🍲" },
+      { title: "Atardecer en Cusco", cat: "Ciudad", emoji: "🌇" }
+    ]
+  },
+  en: {
+    nav: { inicio: "Home", tours: "Tours", nosotros: "About Us", media: "Media", contacto: "Contact", reservar: "Book Now" },
+    hero: {
+      badge: "Local agency in Cusco",
+      title1: "Discover the magic of",
+      titleHighlight: "Cusco",
+      subtitle: "Authentic tours with local guides. Machu Picchu, Rainbow Mountain, Sacred Valley and more — personalized attention on every adventure.",
+      cta1: "View Tours", cta2: "WhatsApp",
+      stat1: "Happy travelers", stat2: "Tours available", stat3: "On TripAdvisor", scroll: "Scroll"
+    },
+    featured: { label: "Most Popular", title: "Featured Tours", seeAll: "View all tours →", details: "View details →", from: "From" },
+    commitments: {
+      label: "Our guarantees", title: "Why Choose Us?",
+      items: [
+        { icon: "🛡️", title: "Certified Safety", desc: "Certified equipment and strict protocols on every adventure." },
+        { icon: "🗣️", title: "Bilingual Guides", desc: "Professionals who speak your language and know every corner." },
+        { icon: "💰", title: "Direct Pricing", desc: "No middlemen. Book directly at the best guaranteed price." },
+        { icon: "📱", title: "24/7 Support", desc: "We assist you via WhatsApp or call whenever you need." }
+      ]
+    },
+    cta: { label: "Ready?", title: "Plan your adventure today", desc: "Message us on WhatsApp and we'll design your perfect itinerary. Instant response, no commitment.", btn: "Message us on WhatsApp" },
+    toursPage: { label: "Experiences", title: "All Our Tours", desc: "From half-day walks to 5-day treks. Find your ideal adventure.", all: "All", fullDay: "Full Day", multiDay: "Multi-day" },
+    tourDetail: {
+      back: "← Back to Tours", itinerary: "Itinerary", includes: "Included", notIncludes: "Not Included",
+      priceLabel: "Price per person", priceNote: "Price per person. Ask about group discounts.", reserveBtn: "Book via WhatsApp",
+      whatsappMsg: "Hi, I want to book"
+    },
+    about: {
+      label: "Our Story", title: "About Green Golden Cusco",
+      paragraphs: [
+        "We are a local tourism agency founded in Cusco by locals. We were born with the conviction that the best way to know our land is with those who live it daily.",
+        "We are not middlemen. We personally design each tour, select our guides for their passion and knowledge, and make sure every traveler feels the authenticity of the Andes.",
+        "From high-altitude trekking to cultural city tours, our mission is to connect travelers with the essence of Cusco in a safe, responsible, and memorable way."
+      ],
+      valuesTitle: "Our Values",
+      values: [
+        { icon: "🌱", title: "Responsible Tourism", desc: "We respect the environment and local communities." },
+        { icon: "🤝", title: "Authenticity", desc: "Real experiences, not generic tourist scripts." },
+        { icon: "⭐", title: "Excellence", desc: "Every detail matters. From transport to the guide." },
+        { icon: "❤️", title: "Passion", desc: "We love our land and it shows in every tour." }
+      ],
+      teamTitle: "Our Team",
+      team: [
+        { name: "Carlos Quispe", role: "Founder & Lead Guide", exp: "12 years of experience", emoji: "👨‍💼" },
+        { name: "María Huamán", role: "Tours Coordinator", exp: "8 years in tourism", emoji: "👩‍💼" },
+        { name: "Diego Condori", role: "Trekking Guide", exp: "Certified in high mountain", emoji: "🧗" },
+        { name: "Luz Mamani", role: "Customer Service", exp: "Bilingual Spanish-English", emoji: "💬" }
+      ],
+      legalTitle: "📄 Legal",
+      legalDesc: "Green Golden Cusco is a formally incorporated company, registered with SUNAT and authorized by DIRCETUR Cusco to operate tourism services.",
+      legalBadges: ["Active RUC", "DIRCETUR Authorized", "Complaints Book"]
+    },
+    mediaPage: {
+      label: "Gallery", title: "Media", desc: "Images and moments from our tours around Cusco.", all: "All",
+      videoTitle: "Multimedia", videoDesc: "Tour videos coming soon. Follow us on social media for updated content."
+    },
+    contact: {
+      label: "Let's Talk", title: "Contact", desc: "Have questions? Write to us and we'll respond instantly.",
+      formTitle: "Send us a message", name: "Name", email: "Email", subject: "Subject", message: "Your message...", send: "Send Message",
+      sent: "Message sent! We'll respond soon.",
+      whatsappTitle: "💬 WhatsApp (Quick Response)", emailTitle: "📧 Email", addressTitle: "📍 Address",
+      hoursTitle: "🕐 Hours", hours1: "Monday to Saturday: 7:00 AM – 9:00 PM", hours2: "Sunday: 8:00 AM – 6:00 PM",
+      socialTitle: "🌐 Social Media"
+    },
+    footer: {
+      desc: "Local tourism agency in Cusco. Authentic tours with personalized attention.",
+      menu: "Menu", popularTours: "Popular Tours", contactLabel: "Contact",
+      terms: "Terms & Conditions", complaints: "Complaints Book", rights: "All rights reserved."
+    },
+    tours: [
+      { id: "machu-picchu", name: "Machu Picchu", tag: "World Wonder", duration: "Full Day", price: "S/. 350",
+        description: "Discover the most iconic Inca citadel on the planet, surrounded by mountains and ancestral mystery.",
+        longDescription: "Machu Picchu is one of the 7 New Wonders of the World. Our tour takes you from Cusco on a journey combining history, nature, and unique energy.",
+        includes: ["Transport Cusco – Ollantaytambo – Aguas Calientes", "Round-trip tourist train", "Bus up/down to Machu Picchu", "Machu Picchu entrance", "Bilingual professional guide", "Permanent assistance"],
+        notIncludes: ["Meals", "Tips", "Personal expenses"],
+        itinerary: [{ time: "4:00 AM", text: "Hotel pickup" }, { time: "6:30 AM", text: "Train from Ollantaytambo" }, { time: "8:30 AM", text: "Bus to Machu Picchu" }, { time: "9:00 AM", text: "Guided tour (2.5 hrs)" }, { time: "12:00 PM", text: "Free time" }, { time: "2:00 PM", text: "Lunch in Aguas Calientes" }, { time: "4:30 PM", text: "Return train" }, { time: "8:00 PM", text: "Arrival in Cusco" }],
+        difficulty: "Easy", altitude: "2,430 m", groupSize: "Max. 16" },
+      { id: "montana-7-colores", name: "Rainbow Mountain", tag: "Natural Icon", duration: "Full Day", price: "S/. 80",
+        description: "Walk through surreal landscapes to one of Peru's most breathtaking natural wonders.",
+        longDescription: "Vinicunca, the famous Rainbow Mountain, shows mineral layers in red, turquoise, gold, and lavender tones. A demanding but absolutely rewarding hike.",
+        includes: ["Transport Cusco – Vinicunca – Cusco", "Buffet breakfast en route", "Bilingual guide", "First aid kit & oxygen", "Trekking poles"],
+        notIncludes: ["Lunch (S/. 15)", "Support horse (S/. 80)", "Tips"],
+        itinerary: [{ time: "3:30 AM", text: "Hotel pickup" }, { time: "6:00 AM", text: "Breakfast in Cusipata" }, { time: "7:30 AM", text: "Start hike (5 km)" }, { time: "10:00 AM", text: "Arrive at summit" }, { time: "11:00 AM", text: "Descent" }, { time: "1:00 PM", text: "Optional lunch" }, { time: "5:00 PM", text: "Arrival in Cusco" }],
+        difficulty: "Moderate-Hard", altitude: "5,200 m", groupSize: "Max. 15" },
+      { id: "laguna-humantay", name: "Humantay Lake", tag: "Pure Nature", duration: "Full Day", price: "S/. 70",
+        description: "A turquoise lake at the foot of ancient glaciers. An unforgettable visual spectacle.",
+        longDescription: "Humantay Lake is a hidden gem in the Cusco Andes. Its intense turquoise waters, fed by the Humantay glacier melt, create a surreal landscape.",
+        includes: ["Round-trip transport", "Breakfast en route", "Bilingual guide", "First aid kit", "Trekking poles"],
+        notIncludes: ["Lunch", "Support horse (S/. 70)", "Lake entrance (S/. 10)", "Tips"],
+        itinerary: [{ time: "4:00 AM", text: "Hotel pickup" }, { time: "6:30 AM", text: "Breakfast in Mollepata" }, { time: "7:30 AM", text: "Start hike" }, { time: "9:30 AM", text: "Arrive at the lake" }, { time: "11:00 AM", text: "Descent" }, { time: "12:30 PM", text: "Optional lunch" }, { time: "5:00 PM", text: "Return to Cusco" }],
+        difficulty: "Moderate", altitude: "4,200 m", groupSize: "Max. 16" },
+      { id: "city-tour", name: "Cusco City Tour", tag: "Historic Center", duration: "Half Day", price: "S/. 50",
+        description: "Walk through the heart of the imperial city: Sacsayhuamán, Qenqo, the Cathedral, and Qoricancha.",
+        longDescription: "A tour through the most emblematic sites of the ancient Inca Empire capital. The perfect blend of Inca and colonial architecture.",
+        includes: ["Tourist transport", "Bilingual guide", "Tour of 6 historic sites"],
+        notIncludes: ["Tourist ticket (S/. 70)", "Cathedral entrance (S/. 25)", "Qoricancha entrance (S/. 15)", "Meals"],
+        itinerary: [{ time: "1:00 PM", text: "Hotel pickup" }, { time: "1:20 PM", text: "Qoricancha" }, { time: "2:30 PM", text: "Cusco Cathedral" }, { time: "3:30 PM", text: "Sacsayhuamán" }, { time: "4:30 PM", text: "Qenqo" }, { time: "5:00 PM", text: "Puca Pucara & Tambomachay" }, { time: "6:00 PM", text: "Return to hotel" }],
+        difficulty: "Easy", altitude: "3,400 m", groupSize: "Max. 16" },
+      { id: "7-lagunas", name: "7 Lagoons Ausangate", tag: "Andean Adventure", duration: "Full Day", price: "S/. 90",
+        description: "Seven intensely colored lagoons surrounded by snow-capped mountains. For trekking lovers.",
+        longDescription: "The 7 Lagoons circuit takes you through spectacular high-Andean landscapes, with lagoons ranging from turquoise to emerald, surrounded by Ausangate glaciers.",
+        includes: ["Round-trip transport", "Buffet breakfast", "Bilingual guide", "First aid kit", "Trekking poles"],
+        notIncludes: ["Lunch", "Support horse (S/. 80)", "Tips"],
+        itinerary: [{ time: "3:00 AM", text: "Hotel pickup" }, { time: "5:30 AM", text: "Breakfast in Checacupe" }, { time: "7:00 AM", text: "Start trek" }, { time: "8:30 AM", text: "First lagoon" }, { time: "10:00 AM", text: "7 lagoons circuit" }, { time: "12:30 PM", text: "Highest point" }, { time: "1:30 PM", text: "Descent & lunch" }, { time: "6:00 PM", text: "Return to Cusco" }],
+        difficulty: "Hard", altitude: "4,800 m", groupSize: "Max. 15" },
+      { id: "camino-inca", name: "Classic Inca Trail", tag: "Legendary Trek", duration: "4D / 3N", price: "S/. 1,800",
+        description: "The ancestral 43 km route to Machu Picchu. Camps, ruins, and life-changing landscapes.",
+        longDescription: "The 4-day Classic Inca Trail is one of the world's best treks. 43 km of original Inca paths, 3 mountain passes, and sunrise at the Sun Gate.",
+        includes: ["Inca Trail & Machu Picchu permits", "Bilingual guide", "Cook & porters", "All meals", "Camping equipment", "Return bus & train"],
+        notIncludes: ["Sleeping bag (S/. 50)", "Poles (S/. 30)", "Tips", "Last lunch"],
+        itinerary: [{ time: "Day 1", text: "Km 82 → Wayllabamba (12 km)" }, { time: "Day 2", text: "Wayllabamba → Pacaymayo (11 km) – Dead Woman's Pass" }, { time: "Day 3", text: "Pacaymayo → Wiñay Wayna (16 km)" }, { time: "Day 4", text: "Wiñay Wayna → Machu Picchu (4 km)" }],
+        difficulty: "Hard", altitude: "4,215 m (max)", groupSize: "Max. 8" },
+      { id: "salkantay", name: "Salkantay Trek", tag: "Alternative Route", duration: "5D / 4N", price: "S/. 1,200",
+        description: "The epic alternative to the Inca Trail. Glaciers, cloud forest, and Machu Picchu in 5 days.",
+        longDescription: "The Salkantay Trek is the most popular alternative route. It crosses landscapes from glaciers at 4,600m to tropical jungle through Andean communities.",
+        includes: ["Transport & transfers", "Bilingual guide", "Cook & muleteers", "All meals", "Full camping", "Machu Picchu entrance", "Return train"],
+        notIncludes: ["Sleeping bag (S/. 50)", "Poles (S/. 30)", "Hot springs (S/. 10)", "Tips"],
+        itinerary: [{ time: "Day 1", text: "Cusco → Soraypampa" }, { time: "Day 2", text: "Salkantay Pass (4,630m)" }, { time: "Day 3", text: "Descent to cloud forest" }, { time: "Day 4", text: "Coffee farms → Aguas Calientes" }, { time: "Day 5", text: "Machu Picchu → Cusco" }],
+        difficulty: "Hard", altitude: "4,630 m (max)", groupSize: "Max. 12" },
+      { id: "lares", name: "Lares Trek", tag: "Living Culture", duration: "4D / 3N", price: "S/. 950",
+        description: "Cultural trek through Quechua communities, hot springs, and authentic Andean landscapes.",
+        longDescription: "The Lares Trek is the most cultural of all routes. It passes through Quechua communities with ancestral traditions, mountains, lagoons, and valleys ending at Machu Picchu.",
+        includes: ["Transport", "Bilingual guide", "Cook & muleteers", "All meals", "Camping", "Machu Picchu entrance", "Return train", "Lares hot springs"],
+        notIncludes: ["Sleeping bag (S/. 50)", "Poles (S/. 30)", "Tips"],
+        itinerary: [{ time: "Day 1", text: "Cusco → Lares – Hot springs" }, { time: "Day 2", text: "Lares → Patacancha" }, { time: "Day 3", text: "Patacancha → Ollantaytambo" }, { time: "Day 4", text: "Machu Picchu → Cusco" }],
+        difficulty: "Moderate", altitude: "4,400 m (max)", groupSize: "Max. 12" },
+      { id: "palccoyo", name: "Palccoyo", tag: "Alternative Rainbow", duration: "Full Day", price: "S/. 70",
+        description: "Three rainbow mountains with an easy hike. The perfect alternative to Vinicunca.",
+        longDescription: "Palccoyo offers three rainbow mountains, a stone forest, and spectacular views with a much easier walk. Ideal for those who want the experience without extreme effort.",
+        includes: ["Round-trip transport", "Buffet breakfast", "Bilingual guide", "First aid kit"],
+        notIncludes: ["Palccoyo entrance (S/. 10)", "Lunch", "Tips"],
+        itinerary: [{ time: "4:00 AM", text: "Hotel pickup" }, { time: "6:30 AM", text: "Breakfast in Checacupe" }, { time: "8:30 AM", text: "Start easy hike (3 km)" }, { time: "9:30 AM", text: "First rainbow mountain" }, { time: "10:30 AM", text: "Stone forest" }, { time: "11:30 AM", text: "Return" }, { time: "5:00 PM", text: "Arrival in Cusco" }],
+        difficulty: "Easy", altitude: "4,900 m", groupSize: "Max. 16" }
+    ],
+    gallery: [
+      { title: "Machu Picchu at sunrise", cat: "Machu Picchu", emoji: "🌅" },
+      { title: "Rainbow Mountain summit", cat: "Rainbow Mt.", emoji: "🌈" },
+      { title: "Humantay Lake", cat: "Lakes", emoji: "💎" },
+      { title: "Sacsayhuamán", cat: "City Tour", emoji: "🏛️" },
+      { title: "Sacred Valley panorama", cat: "Valley", emoji: "🏞️" },
+      { title: "Sun Gate – Inca Trail", cat: "Trekking", emoji: "🚶" },
+      { title: "Group at the top", cat: "Groups", emoji: "👥" },
+      { title: "Cusco traditional food", cat: "Culture", emoji: "🍲" },
+      { title: "Sunset in Cusco", cat: "City", emoji: "🌇" }
+    ]
+  },
+  pt: {
+    nav: { inicio: "Início", tours: "Tours", nosotros: "Sobre Nós", media: "Mídia", contacto: "Contato", reservar: "Reservar" },
+    hero: {
+      badge: "Agência local em Cusco",
+      title1: "Descubra a magia de",
+      titleHighlight: "Cusco",
+      subtitle: "Tours autênticos com guias locais. Machu Picchu, Montanha 7 Cores, Vale Sagrado e mais — atendimento personalizado em cada aventura.",
+      cta1: "Ver Tours", cta2: "WhatsApp",
+      stat1: "Viajantes felizes", stat2: "Tours disponíveis", stat3: "No TripAdvisor", scroll: "Scroll"
+    },
+    featured: { label: "Mais populares", title: "Tours em Destaque", seeAll: "Ver todos os tours →", details: "Ver detalhes →", from: "A partir de" },
+    commitments: {
+      label: "Nossas garantias", title: "Por que nos escolher?",
+      items: [
+        { icon: "🛡️", title: "Segurança Certificada", desc: "Equipamentos certificados e protocolos rigorosos em cada aventura." },
+        { icon: "🗣️", title: "Guias Bilíngues", desc: "Profissionais que falam seu idioma e conhecem cada canto." },
+        { icon: "💰", title: "Preço Direto", desc: "Sem intermediários. Reserve direto com o melhor preço garantido." },
+        { icon: "📱", title: "Atendimento 24/7", desc: "Atendemos pelo WhatsApp ou ligação quando precisar." }
+      ]
+    },
+    cta: { label: "Pronto?", title: "Monte sua aventura hoje", desc: "Escreva no WhatsApp e montamos seu roteiro ideal. Resposta imediata, sem compromisso.", btn: "Fale conosco no WhatsApp" },
+    toursPage: { label: "Experiências", title: "Todos os Nossos Tours", desc: "De caminhadas de meio dia a trekkings de 5 dias. Encontre sua aventura ideal.", all: "Todos", fullDay: "Full Day", multiDay: "Multi-dia" },
+    tourDetail: {
+      back: "← Voltar aos Tours", itinerary: "Roteiro", includes: "Inclui", notIncludes: "Não Inclui",
+      priceLabel: "Preço por pessoa", priceNote: "Preço por pessoa. Consulte desconto para grupos.", reserveBtn: "Reservar pelo WhatsApp",
+      whatsappMsg: "Olá, quero reservar"
+    },
+    about: {
+      label: "Nossa história", title: "Sobre Green Golden Cusco",
+      paragraphs: [
+        "Somos uma agência de turismo local fundada em Cusco por cusqueños. Nascemos com a convicção de que a melhor forma de conhecer nossa terra é com quem a vive diariamente.",
+        "Não somos intermediários. Desenhamos cada tour pessoalmente, selecionamos nossos guias pela paixão e conhecimento, e garantimos que cada viajante sinta a autenticidade dos Andes.",
+        "De trekking de alta montanha a passeios culturais pela cidade, nossa missão é conectar viajantes com a essência de Cusco de forma segura, responsável e memorável."
+      ],
+      valuesTitle: "Nossos Valores",
+      values: [
+        { icon: "🌱", title: "Turismo Responsável", desc: "Respeitamos o meio ambiente e as comunidades locais." },
+        { icon: "🤝", title: "Autenticidade", desc: "Experiências reais, não roteiros turísticos genéricos." },
+        { icon: "⭐", title: "Excelência", desc: "Cada detalhe importa. Do transporte ao guia." },
+        { icon: "❤️", title: "Paixão", desc: "Amamos nossa terra e isso se nota em cada tour." }
+      ],
+      teamTitle: "Nossa Equipe",
+      team: [
+        { name: "Carlos Quispe", role: "Fundador & Guia Principal", exp: "12 anos de experiência", emoji: "👨‍💼" },
+        { name: "María Huamán", role: "Coordenadora de Tours", exp: "8 anos em turismo", emoji: "👩‍💼" },
+        { name: "Diego Condori", role: "Guia de Trekking", exp: "Certificado em alta montanha", emoji: "🧗" },
+        { name: "Luz Mamani", role: "Atendimento ao Cliente", exp: "Bilíngue espanhol-inglês", emoji: "💬" }
+      ],
+      legalTitle: "📄 Legalidades",
+      legalDesc: "Green Golden Cusco é uma empresa formalmente constituída, registrada na SUNAT e autorizada pela DIRCETUR Cusco para operar serviços turísticos.",
+      legalBadges: ["RUC Ativo", "DIRCETUR Autorizado", "Livro de Reclamações"]
+    },
+    mediaPage: {
+      label: "Galeria", title: "Mídia", desc: "Imagens e momentos dos nossos tours por Cusco e arredores.", all: "Todas",
+      videoTitle: "Multimídia", videoDesc: "Em breve vídeos dos nossos tours. Siga-nos nas redes para conteúdo atualizado."
+    },
+    contact: {
+      label: "Fale Conosco", title: "Contato", desc: "Tem perguntas? Escreva e respondemos na hora.",
+      formTitle: "Envie uma mensagem", name: "Nome", email: "E-mail", subject: "Assunto", message: "Sua mensagem...", send: "Enviar Mensagem",
+      sent: "Mensagem enviada! Responderemos em breve.",
+      whatsappTitle: "💬 WhatsApp (Resposta rápida)", emailTitle: "📧 E-mail", addressTitle: "📍 Endereço",
+      hoursTitle: "🕐 Horário", hours1: "Segunda a Sábado: 7:00 AM – 9:00 PM", hours2: "Domingo: 8:00 AM – 6:00 PM",
+      socialTitle: "🌐 Redes Sociais"
+    },
+    footer: {
+      desc: "Agência de turismo local em Cusco. Tours autênticos com atendimento personalizado.",
+      menu: "Menu", popularTours: "Tours Populares", contactLabel: "Contato",
+      terms: "Termos e Condições", complaints: "Livro de Reclamações", rights: "Todos os direitos reservados."
+    },
+    tours: [
+      { id: "machu-picchu", name: "Machu Picchu", tag: "Maravilha do Mundo", duration: "Dia Inteiro", price: "S/. 350",
+        description: "Descubra a cidadela inca mais emblemática do planeta, cercada de montanhas e mistério ancestral.",
+        longDescription: "Machu Picchu é uma das 7 maravilhas do mundo moderno. Nosso tour leva você de Cusco em uma viagem que combina história, natureza e energia única.",
+        includes: ["Transporte Cusco – Ollantaytambo – Aguas Calientes", "Trem turístico ida e volta", "Ônibus subida/descida Machu Picchu", "Entrada Machu Picchu", "Guia bilíngue", "Assistência permanente"],
+        notIncludes: ["Alimentação", "Gorjetas", "Gastos pessoais"],
+        itinerary: [{ time: "4:00 AM", text: "Saída do hotel" }, { time: "6:30 AM", text: "Trem de Ollantaytambo" }, { time: "8:30 AM", text: "Ônibus a Machu Picchu" }, { time: "9:00 AM", text: "Tour guiado (2,5 hrs)" }, { time: "12:00 PM", text: "Tempo livre" }, { time: "2:00 PM", text: "Almoço em Aguas Calientes" }, { time: "4:30 PM", text: "Trem de retorno" }, { time: "8:00 PM", text: "Chegada em Cusco" }],
+        difficulty: "Fácil", altitude: "2.430 m", groupSize: "Máx. 16" },
+      { id: "montana-7-colores", name: "Montanha 7 Cores", tag: "Ícone Natural", duration: "Dia Inteiro", price: "S/. 80",
+        description: "Caminhe por paisagens surreais até um dos cenários mais impressionantes do Peru.",
+        longDescription: "Vinicunca, a famosa Montanha 7 Cores, mostra camadas minerais em tons avermelhados, turquesa, dourados e lavanda. Uma caminhada exigente mas gratificante.",
+        includes: ["Transporte Cusco – Vinicunca – Cusco", "Café da manhã buffet", "Guia bilíngue", "Kit primeiros socorros e oxigênio", "Bastões de trekking"],
+        notIncludes: ["Almoço (S/. 15)", "Cavalo de apoio (S/. 80)", "Gorjetas"],
+        itinerary: [{ time: "3:30 AM", text: "Saída do hotel" }, { time: "6:00 AM", text: "Café em Cusipata" }, { time: "7:30 AM", text: "Início caminhada (5 km)" }, { time: "10:00 AM", text: "Chegada ao cume" }, { time: "11:00 AM", text: "Descida" }, { time: "1:00 PM", text: "Almoço opcional" }, { time: "5:00 PM", text: "Chegada em Cusco" }],
+        difficulty: "Moderada-Alta", altitude: "5.200 m", groupSize: "Máx. 15" },
+      { id: "laguna-humantay", name: "Lagoa Humantay", tag: "Natureza Pura", duration: "Dia Inteiro", price: "S/. 70",
+        description: "Uma lagoa turquesa aos pés de geleiras milenares. Um espetáculo visual inesquecível.",
+        longDescription: "A Lagoa Humantay é uma joia escondida nos Andes cusqueños. Suas águas turquesa intenso criam uma paisagem irreal.",
+        includes: ["Transporte ida e volta", "Café da manhã", "Guia bilíngue", "Kit primeiros socorros", "Bastões"],
+        notIncludes: ["Almoço", "Cavalo (S/. 70)", "Entrada lagoa (S/. 10)", "Gorjetas"],
+        itinerary: [{ time: "4:00 AM", text: "Saída do hotel" }, { time: "6:30 AM", text: "Café em Mollepata" }, { time: "7:30 AM", text: "Início caminhada" }, { time: "9:30 AM", text: "Chegada à lagoa" }, { time: "11:00 AM", text: "Descida" }, { time: "12:30 PM", text: "Almoço opcional" }, { time: "5:00 PM", text: "Retorno a Cusco" }],
+        difficulty: "Moderada", altitude: "4.200 m", groupSize: "Máx. 16" },
+      { id: "city-tour", name: "City Tour Cusco", tag: "Centro Histórico", duration: "Meio Dia", price: "S/. 50",
+        description: "Percorra a essência da cidade imperial: Sacsayhuamán, Qenqo, Catedral e Qoricancha.",
+        longDescription: "Um passeio pelos pontos mais emblemáticos da antiga capital do Império Inca. A fusão perfeita entre arquitetura inca e colonial.",
+        includes: ["Transporte turístico", "Guia bilíngue", "Visita a 6 sítios históricos"],
+        notIncludes: ["Boleto turístico (S/. 70)", "Entrada Catedral (S/. 25)", "Entrada Qoricancha (S/. 15)", "Alimentação"],
+        itinerary: [{ time: "1:00 PM", text: "Saída do hotel" }, { time: "1:20 PM", text: "Qoricancha" }, { time: "2:30 PM", text: "Catedral de Cusco" }, { time: "3:30 PM", text: "Sacsayhuamán" }, { time: "4:30 PM", text: "Qenqo" }, { time: "5:00 PM", text: "Puca Pucara e Tambomachay" }, { time: "6:00 PM", text: "Retorno ao hotel" }],
+        difficulty: "Fácil", altitude: "3.400 m", groupSize: "Máx. 16" },
+      { id: "7-lagunas", name: "7 Lagoas Ausangate", tag: "Aventura Andina", duration: "Dia Inteiro", price: "S/. 90",
+        description: "Sete lagoas de cores intensas cercadas de montanhas nevadas. Para amantes de trekking.",
+        longDescription: "O circuito das 7 Lagoas leva por paisagens alto-andinas espetaculares, com lagoas do turquesa ao esmeralda.",
+        includes: ["Transporte ida e volta", "Café buffet", "Guia bilíngue", "Kit primeiros socorros", "Bastões"],
+        notIncludes: ["Almoço", "Cavalo (S/. 80)", "Gorjetas"],
+        itinerary: [{ time: "3:00 AM", text: "Saída do hotel" }, { time: "5:30 AM", text: "Café em Checacupe" }, { time: "7:00 AM", text: "Início trekking" }, { time: "8:30 AM", text: "Primeira lagoa" }, { time: "10:00 AM", text: "Circuito 7 lagoas" }, { time: "12:30 PM", text: "Ponto mais alto" }, { time: "1:30 PM", text: "Descida e almoço" }, { time: "6:00 PM", text: "Retorno a Cusco" }],
+        difficulty: "Alta", altitude: "4.800 m", groupSize: "Máx. 15" },
+      { id: "camino-inca", name: "Trilha Inca Clássica", tag: "Trekking Lendário", duration: "4D / 3N", price: "S/. 1.800",
+        description: "A rota ancestral de 43 km até Machu Picchu. Acampamentos, ruínas e paisagens que mudam vidas.",
+        longDescription: "A Trilha Inca Clássica de 4 dias é um dos melhores trekkings do mundo. 43 km de trilhas incas originais, 3 passagens de montanha e nascer do sol no Portão do Sol.",
+        includes: ["Permissões Trilha Inca e Machu Picchu", "Guia bilíngue", "Cozinheiro e carregadores", "Todas as refeições", "Equipamento de camping", "Ônibus e trem retorno"],
+        notIncludes: ["Saco de dormir (S/. 50)", "Bastões (S/. 30)", "Gorjetas", "Último almoço"],
+        itinerary: [{ time: "Dia 1", text: "Km 82 → Wayllabamba (12 km)" }, { time: "Dia 2", text: "Wayllabamba → Pacaymayo (11 km)" }, { time: "Dia 3", text: "Pacaymayo → Wiñay Wayna (16 km)" }, { time: "Dia 4", text: "Wiñay Wayna → Machu Picchu (4 km)" }],
+        difficulty: "Alta", altitude: "4.215 m (máx)", groupSize: "Máx. 8" },
+      { id: "salkantay", name: "Salkantay Trekking", tag: "Rota Alternativa", duration: "5D / 4N", price: "S/. 1.200",
+        description: "A alternativa épica à Trilha Inca. Geleiras, mata nublada e Machu Picchu em 5 dias.",
+        longDescription: "O Salkantay Trek é a rota alternativa mais popular. Cruza paisagens de geleiras a 4.600m até selva tropical.",
+        includes: ["Transporte", "Guia bilíngue", "Cozinheiro e tropeiros", "Todas as refeições", "Camping completo", "Entrada Machu Picchu", "Trem retorno"],
+        notIncludes: ["Saco de dormir (S/. 50)", "Bastões (S/. 30)", "Águas termais (S/. 10)", "Gorjetas"],
+        itinerary: [{ time: "Dia 1", text: "Cusco → Soraypampa" }, { time: "Dia 2", text: "Passagem Salkantay (4.630m)" }, { time: "Dia 3", text: "Descida à mata nublada" }, { time: "Dia 4", text: "Cafezais → Aguas Calientes" }, { time: "Dia 5", text: "Machu Picchu → Cusco" }],
+        difficulty: "Alta", altitude: "4.630 m (máx)", groupSize: "Máx. 12" },
+      { id: "lares", name: "Lares Trekking", tag: "Cultura Viva", duration: "4D / 3N", price: "S/. 950",
+        description: "Trekking cultural por comunidades quechuas, águas termais e paisagens andinas autênticas.",
+        longDescription: "O Trek de Lares é a rota mais cultural. Passa por comunidades quechuas com tradições ancestrais até Machu Picchu.",
+        includes: ["Transporte", "Guia bilíngue", "Cozinheiro e tropeiros", "Todas as refeições", "Camping", "Entrada Machu Picchu", "Trem retorno", "Águas termais de Lares"],
+        notIncludes: ["Saco de dormir (S/. 50)", "Bastões (S/. 30)", "Gorjetas"],
+        itinerary: [{ time: "Dia 1", text: "Cusco → Lares – Águas termais" }, { time: "Dia 2", text: "Lares → Patacancha" }, { time: "Dia 3", text: "Patacancha → Ollantaytambo" }, { time: "Dia 4", text: "Machu Picchu → Cusco" }],
+        difficulty: "Moderada", altitude: "4.400 m (máx)", groupSize: "Máx. 12" },
+      { id: "palccoyo", name: "Palccoyo", tag: "7 Cores Alternativo", duration: "Dia Inteiro", price: "S/. 70",
+        description: "Três montanhas coloridas com caminhada leve. A alternativa perfeita a Vinicunca.",
+        longDescription: "Palccoyo oferece três montanhas coloridas, uma floresta de pedras e vistas espetaculares com caminhada menos exigente.",
+        includes: ["Transporte ida e volta", "Café buffet", "Guia bilíngue", "Kit primeiros socorros"],
+        notIncludes: ["Entrada Palccoyo (S/. 10)", "Almoço", "Gorjetas"],
+        itinerary: [{ time: "4:00 AM", text: "Saída do hotel" }, { time: "6:30 AM", text: "Café em Checacupe" }, { time: "8:30 AM", text: "Início caminhada (3 km)" }, { time: "9:30 AM", text: "Primeira montanha" }, { time: "10:30 AM", text: "Floresta de pedras" }, { time: "11:30 AM", text: "Retorno" }, { time: "5:00 PM", text: "Chegada em Cusco" }],
+        difficulty: "Fácil", altitude: "4.900 m", groupSize: "Máx. 16" }
+    ],
+    gallery: [
+      { title: "Machu Picchu ao amanhecer", cat: "Machu Picchu", emoji: "🌅" },
+      { title: "Cume Montanha 7 Cores", cat: "Montanha 7C", emoji: "🌈" },
+      { title: "Lagoa Humantay", cat: "Lagoas", emoji: "💎" },
+      { title: "Sacsayhuamán", cat: "City Tour", emoji: "🏛️" },
+      { title: "Vale Sagrado", cat: "Vale", emoji: "🏞️" },
+      { title: "Portão do Sol", cat: "Trekking", emoji: "🚶" },
+      { title: "Grupo no topo", cat: "Grupos", emoji: "👥" },
+      { title: "Comida cusqueña", cat: "Cultura", emoji: "🍲" },
+      { title: "Pôr do sol em Cusco", cat: "Cidade", emoji: "🌇" }
+    ]
+  }
+}
