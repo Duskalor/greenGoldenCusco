@@ -6,6 +6,11 @@ export const metadata: Metadata = {
 	title: "Tours en Cusco | Green Golden Cusco",
 	description:
 		"Agencia de turismo local en Cusco. Machu Picchu, Montaña 7 Colores, trekkings y más.",
+	icons: {
+		icon: [
+			{ url: "/favicon.svg", type: "image/svg+xml" },
+		],
+	},
 };
 
 export default function RootLayout({
