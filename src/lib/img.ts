@@ -6,7 +6,7 @@
  */
 export function img(src: string): string {
 	const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-	if (basePath && src.startsWith("/")) {
+	if (basePath && src.startsWith("/") && !src.startsWith(basePath)) {
 		return `${basePath}${src}`;
 	}
 	return src;
