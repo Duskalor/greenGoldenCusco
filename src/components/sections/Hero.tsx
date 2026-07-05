@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/image";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
 import { Animate } from "../ui/Animate";
 import { Button } from "../ui/Button";
@@ -28,7 +28,7 @@ export function Hero({ t, onViewTours }: HeroProps) {
 		<section className="min-h-screen flex items-center justify-center relative overflow-hidden">
 			{/* Background image — Cusco aerial at dusk */}
 			<Image
-				src="/images/tours/cusco-hero.jpg"
+				src="/images/tours/cusco-hero.webp"
 				alt="Cusco at dusk"
 				fill
 				className="object-cover"

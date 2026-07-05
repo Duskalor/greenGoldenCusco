@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
 		unoptimized: true,
 	},
 
+	// Pasamos basePath al cliente para el image-loader custom
+	env: {
+		NEXT_PUBLIC_BASE_PATH: isGitHubPages ? `/${repoName}` : "",
+	},
+
 	// Trailing slash para que /tours sirva /tours/index.html (GitHub Pages)
 	trailingSlash: true,
 

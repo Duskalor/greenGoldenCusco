@@ -1,7 +1,7 @@
 "use client";
 
 import { Calendar, Clock, User } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { BlogPost } from "@/types";

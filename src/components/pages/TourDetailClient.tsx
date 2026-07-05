@@ -8,7 +8,7 @@ import {
 	Users,
 	XCircle,
 } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/image";
 import { useRouter } from "next/navigation";
 import { Animate } from "@/components/ui/Animate";
 import { Badge } from "@/components/ui/Badge";
@@ -55,7 +55,7 @@ export function TourDetailClient({ id }: { id: string }) {
 				<Image
 					src={
 						tourImages[tour.id]?.hero ??
-						"/images/tours/machu-picchu-hero.jpg"
+						"/images/tours/machu-picchu-hero.webp"
 					}
 					alt={tour.name}
 					fill

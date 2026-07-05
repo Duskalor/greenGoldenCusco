@@ -2,41 +2,41 @@ import type { Tour, TourImages } from "../types";
 
 export const tourImages: Record<string, TourImages> = {
 	"machu-picchu": {
-		hero: "/images/tours/machu-picchu-hero.jpg",
-		thumb: "/images/tours/machu-picchu.jpg",
-		gallery: ["/images/tours/machu-picchu-hero.jpg", "/images/tours/machu-picchu.jpg"],
+		hero: "/images/tours/machu-picchu-hero.webp",
+		thumb: "/images/tours/machu-picchu.webp",
+		gallery: ["/images/tours/machu-picchu-hero.webp", "/images/tours/machu-picchu.webp"],
 	},
 	"montana-7-colores": {
-		hero: "/images/tours/rainbow-mountain.jpg",
-		thumb: "/images/tours/rainbow-mountain.jpg",
+		hero: "/images/tours/rainbow-mountain.webp",
+		thumb: "/images/tours/rainbow-mountain.webp",
 	},
 	"laguna-humantay": {
-		hero: "/images/tours/humantay.jpg",
-		thumb: "/images/tours/humantay.jpg",
+		hero: "/images/tours/humantay.webp",
+		thumb: "/images/tours/humantay.webp",
 	},
 	"city-tour": {
-		hero: "/images/tours/cusco-city.jpg",
-		thumb: "/images/tours/cusco-city.jpg",
+		hero: "/images/tours/cusco-city.webp",
+		thumb: "/images/tours/cusco-city.webp",
 	},
 	"7-lagunas": {
-		hero: "/images/tours/ausangate.jpg",
-		thumb: "/images/tours/ausangate.jpg",
+		hero: "/images/tours/ausangate.webp",
+		thumb: "/images/tours/ausangate.webp",
 	},
 	"camino-inca": {
-		hero: "/images/tours/inca-trail.jpg",
-		thumb: "/images/tours/inca-trail.jpg",
+		hero: "/images/tours/inca-trail.webp",
+		thumb: "/images/tours/inca-trail.webp",
 	},
 	salkantay: {
-		hero: "/images/tours/salkantay.jpg",
-		thumb: "/images/tours/salkantay.jpg",
+		hero: "/images/tours/salkantay.webp",
+		thumb: "/images/tours/salkantay.webp",
 	},
 	lares: {
-		hero: "/images/tours/sacred-valley.jpg",
-		thumb: "/images/tours/sacred-valley.jpg",
+		hero: "/images/tours/sacred-valley.webp",
+		thumb: "/images/tours/sacred-valley.webp",
 	},
 	palccoyo: {
-		hero: "/images/tours/rainbow-mountain.jpg",
-		thumb: "/images/tours/rainbow-mountain.jpg",
+		hero: "/images/tours/rainbow-mountain.webp",
+		thumb: "/images/tours/rainbow-mountain.webp",
 	},
 };
 

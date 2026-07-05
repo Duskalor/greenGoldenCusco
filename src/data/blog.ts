@@ -29,7 +29,7 @@ El **Acetazolamida** es un medicamento que ayuda a la aclimatación. Se consigue
 ## ¿Cuándo preocuparse?
 
 Si los síntomas son intensos (vómitos recurrentes, confusión, dificultad para respirar en reposo), buscá atención médica. Existen clínicas en Cusco y centros de oxígeno.`,
-		image: "/images/tours/cusco-city.jpg",
+		image: "/images/tours/cusco-city.webp",
 		author: "Carlos Quispe",
 		date: "2026-06-15",
 		category: "Consejos",
@@ -71,7 +71,7 @@ La experiencia clásica de 4 días/3 noches. Llegás caminando por la Puerta del
 - Bloqueador solar y repelente
 - Poncho para lluvia (el clima cambia rápido)
 - Calzado cómodo para caminar`,
-		image: "/images/tours/machu-picchu-hero.jpg",
+		image: "/images/tours/machu-picchu-hero.webp",
 		author: "María Huamán",
 		date: "2026-06-10",
 		category: "Guías",
@@ -115,7 +115,7 @@ Palcoyo es la hermana tranquila de Vinicunca. Ofrece **tres montañas de colores
 **Elegí Vinicunca** si: estás en buena forma, te bancás la altura, querés la foto postal.
 
 **Elegí Palcoyo** si: viajás con niños, tenés poco tiempo, o preferís una experiencia más tranquila.`,
-		image: "/images/tours/rainbow-mountain.jpg",
+		image: "/images/tours/rainbow-mountain.webp",
 		author: "Carlos Quispe",
 		date: "2026-05-28",
 		category: "Comparativas",
@@ -156,7 +156,7 @@ Mayo tiene lo mejor de ambos mundos: clima seco, paisajes verdes, y menos turist
 El Camino Inca **cierra todo febrero** para mantenimiento y descanso de los caminos. Si querés hacerlo, evitá esa fecha.
 
 **Conclusión**: si podés elegir, vení entre **abril y junio** o **agosto y octubre**. Clima estable, experiencias completas y precios moderados.`,
-		image: "/images/tours/machu-picchu.jpg",
+		image: "/images/tours/machu-picchu.webp",
 		author: "María Huamán",
 		date: "2026-05-15",
 		category: "Consejos",
@@ -207,7 +207,7 @@ El gobierno peruano **limita** el acceso a 500 personas por día (incluyendo gu�
 ## ¿Se puede hacer sin agencia?
 
 No. Es obligatorio contratar un operador autorizado. Nosotros somos operadores locales con todos los permisos.`,
-		image: "/images/tours/inca-trail.jpg",
+		image: "/images/tours/inca-trail.webp",
 		author: "Carlos Quispe",
 		date: "2026-04-20",
 		category: "Guías",
@@ -260,7 +260,7 @@ Botas de trekking con **tobillera**: las zapatillas no sujetan el tobillo y en t
 - Campera de plumas sin capa impermeable: si se moja, no aísla.
 - Mochila sin soporte lumbar: te va a doler la espalda.
 - 5 kilos de "por si acaso": cada gramo cuenta.`,
-		image: "/images/tours/salkantay.jpg",
+		image: "/images/tours/salkantay.webp",
 		author: "María Huamán",
 		date: "2026-03-10",
 		category: "Consejos",
@@ -299,7 +299,7 @@ Arrive in Cusco at least **2 days before** any trekking or Machu Picchu visit (w
 ## When to Worry
 
 If symptoms are severe (repeated vomiting, confusion, difficulty breathing at rest), seek medical attention. There are clinics and oxygen centers in Cusco.`,
-		image: "/images/tours/cusco-city.jpg",
+		image: "/images/tours/cusco-city.webp",
 		author: "Carlos Quispe",
 		date: "2026-06-15",
 		category: "Tips",
@@ -330,7 +330,7 @@ Take a train from Ollantaytambo or Poroy to Aguas Calientes. From there, a bus g
 
 **Early entry (6:00-7:00 am)**: fewer people, morning mist that clears, golden light for photos.
 **Late entry (11:00-12:00 pm)**: quieter after noon, sun illuminates the entire citadel.`,
-		image: "/images/tours/machu-picchu-hero.jpg",
+		image: "/images/tours/machu-picchu-hero.webp",
 		author: "María Huamán",
 		date: "2026-06-10",
 		category: "Guides",
@@ -360,7 +360,7 @@ Palcoyo offers **three rainbow mountains** in one valley, a stone forest, and vi
 **Choose Vinicunca** if: you're fit, can handle altitude, want the iconic photo.
 
 **Choose Palcoyo** if: traveling with kids, short on time, or prefer a quieter experience.`,
-		image: "/images/tours/rainbow-mountain.jpg",
+		image: "/images/tours/rainbow-mountain.webp",
 		author: "Carlos Quispe",
 		date: "2026-05-28",
 		category: "Comparisons",
@@ -388,7 +388,7 @@ The **best time** to visit Cusco. Clear skies, radiant sun during the day, cold 
 ## Best Month: May
 
 May has the best of both worlds: dry weather, green landscapes, and fewer tourists than June-July.`,
-		image: "/images/tours/machu-picchu.jpg",
+		image: "/images/tours/machu-picchu.webp",
 		author: "María Huamán",
 		date: "2026-05-15",
 		category: "Tips",
@@ -415,7 +415,7 @@ The Peruvian government **limits** access to 500 people per day. In peak season 
 **Day 2 — Wayllabamba to Pacaymayo**: 11 km, ~7 hrs. The hardest day: climb to Dead Woman's Pass at 4,215 m.
 **Day 3 — Pacaymayo to Wiñay Wayna**: 16 km, ~8 hrs. The longest but most beautiful day.
 **Day 4 — Wiñay Wayna to Machu Picchu**: 6 km, ~4 hrs. Arrive at Sun Gate at sunrise. Magical.`,
-		image: "/images/tours/inca-trail.jpg",
+		image: "/images/tours/inca-trail.webp",
 		author: "Carlos Quispe",
 		date: "2026-04-20",
 		category: "Guides",
@@ -452,7 +452,7 @@ Andes weather changes every 20 minutes. Use 3 layers:
 - **Sunscreen & sunglasses**: UV radiation is extreme at 5,000 m.
 - **Hat & gloves**: it's cold at the summit even in summer.
 - **Trekking poles**: reduce knee impact by 30%.`,
-		image: "/images/tours/salkantay.jpg",
+		image: "/images/tours/salkantay.webp",
 		author: "María Huamán",
 		date: "2026-03-10",
 		category: "Tips",
@@ -483,7 +483,7 @@ Chegue em Cusco pelo menos **2 dias antes** de qualquer trekking ou visita a Mac
 - **Hidratação**: beba o dobro de água do normal.
 - **Sem álcool**: nos primeiros dois dias, zero cerveja ou pisco sour.
 - **Ande devagar**: literalmente, mova-se em câmera lenta.`,
-		image: "/images/tours/cusco-city.jpg",
+		image: "/images/tours/cusco-city.webp",
 		author: "Carlos Quispe",
 		date: "2026-06-15",
 		category: "Dicas",
@@ -504,7 +504,7 @@ Existem **4 circuitos** principais para visitar Machu Picchu:
 2. **Circuito 2 — Machu Picchu clássico**: o mais completo.
 3. **Circuito 3 — Imperial**: inclui Intihuatana e área cerimonial.
 4. **Circuito 4 — Portão do Sol**: para quem chega pela Trilha Inca.`,
-		image: "/images/tours/machu-picchu-hero.jpg",
+		image: "/images/tours/machu-picchu-hero.webp",
 		author: "María Huamán",
 		date: "2026-06-10",
 		category: "Guias",
@@ -530,7 +530,7 @@ Existem **4 circuitos** principais para visitar Machu Picchu:
 **Escolha Vinicunca** se: você está em boa forma, aguenta a altitude, quer a foto icônica.
 
 **Escolha Palcoyo** se: viaja com crianças, tem pouco tempo, ou prefere uma experiência mais tranquila.`,
-		image: "/images/tours/rainbow-mountain.jpg",
+		image: "/images/tours/rainbow-mountain.webp",
 		author: "Carlos Quispe",
 		date: "2026-05-28",
 		category: "Comparações",
@@ -553,7 +553,7 @@ A **melhor época** para visitar Cusco. Céu limpo, sol radiante durante o dia, 
 ## Mês recomendado: maio
 
 Maio tem o melhor dos dois mundos: clima seco, paisagens verdes e menos turistas.`,
-		image: "/images/tours/machu-picchu.jpg",
+		image: "/images/tours/machu-picchu.webp",
 		author: "María Huamán",
 		date: "2026-05-15",
 		category: "Dicas",
@@ -580,7 +580,7 @@ O governo peruano **limita** o acesso a 500 pessoas por dia. Na alta temporada a
 **Dia 2 — Wayllabamba a Pacaymayo**: 11 km, ~7 hrs. O dia mais difícil.
 **Dia 3 — Pacaymayo a Wiñay Wayna**: 16 km, ~8 hrs.
 **Dia 4 — Wiñay Wayna a Machu Picchu**: 6 km, ~4 hrs.`,
-		image: "/images/tours/inca-trail.jpg",
+		image: "/images/tours/inca-trail.webp",
 		author: "Carlos Quispe",
 		date: "2026-04-20",
 		category: "Guias",
@@ -605,7 +605,7 @@ O clima nos Andes muda a cada 20 minutos:
 1. **Camada base**: camisa térmica (sem algodão).
 2. **Camada isolante**: fleece ou microplush.
 3. **Camada externa**: corta-vento e impermeável.`,
-		image: "/images/tours/salkantay.jpg",
+		image: "/images/tours/salkantay.webp",
 		author: "María Huamán",
 		date: "2026-03-10",
 		category: "Dicas",

@@ -1,7 +1,7 @@
 "use client";
 
 import { Clock, Mountain, Users } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/image";
 import { useRouter } from "next/navigation";
 import { tourImages, tourMeta, tourPricesUSD } from "../../data/tours";
 import type { Currency, Tour } from "../../types";
@@ -46,7 +46,7 @@ export function TourCard({
 					<Image
 						src={
 							tourImages[tour.id]?.hero ??
-							"/images/tours/machu-picchu-hero.jpg"
+							"/images/tours/machu-picchu-hero.webp"
 						}
 						alt={tour.name}
 						fill

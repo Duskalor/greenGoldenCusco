@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowLeft, Calendar, Clock, Tag, User } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Animate } from "@/components/ui/Animate";

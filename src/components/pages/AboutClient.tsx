@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/image";
 import { Animate } from "@/components/ui/Animate";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -15,7 +15,7 @@ export function AboutClient() {
 			{/* Hero banner */}
 			<div className="relative h-[35vh] min-h-[300px] overflow-hidden flex items-end">
 				<Image
-					src="/images/tours/cusco-hero.jpg"
+					src="/images/tours/cusco-hero.webp"
 					alt="Cusco"
 					fill
 					className="object-cover"

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import Image from "@/components/image";
 import { Animate } from "@/components/ui/Animate";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
