@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="images/tours/cusco-hero.webp" alt="Cusco at dusk" width="100%" style="border-radius: 12px; max-width: 800px;" />
+  <img src="public/images/tours/cusco-hero.webp" alt="Cusco at dusk" width="100%" style="border-radius: 12px; max-width: 800px;" />
 </p>
 
 <h1 align="center">Green Golden Cusco 🏔️</h1>
