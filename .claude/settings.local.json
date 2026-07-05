@@ -3,7 +3,19 @@
     "allow": [
       "Bash(git:*)",
       "Bash(claude mcp:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "mcp__plugin_engram_engram__mem_save",
+      "mcp__plugin_engram_engram__mem_search",
+      "Bash(echo:*)",
+      "Bash(printf:*)",
+      "Read(//private/tmp/**)",
+      "Bash(npx create-vite@latest ggc-scaffold --template react-ts)",
+      "Bash(cp:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(wait:*)",
+      "mcp__plugin_engram_engram__mem_session_summary"
     ]
   }
 }

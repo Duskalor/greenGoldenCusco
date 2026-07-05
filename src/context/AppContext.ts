@@ -1,20 +1,20 @@
-import { createContext, useContext } from 'react'
-import type { Lang, Currency } from '@/types'
+import { createContext, useContext } from "react";
+import type { Currency, Lang } from "@/types";
 
 interface AppContextValue {
-  lang: Lang
-  setLang: (l: Lang) => void
-  currency: Currency
-  setCurrency: (c: Currency) => void
+	lang: Lang;
+	setLang: (l: Lang) => void;
+	currency: Currency;
+	setCurrency: (c: Currency) => void;
 }
 
 export const AppContext = createContext<AppContextValue>({
-  lang: 'es',
-  setLang: () => {},
-  currency: 'PEN',
-  setCurrency: () => {},
-})
+	lang: "es",
+	setLang: () => void 0,
+	currency: "PEN",
+	setCurrency: () => void 0,
+});
 
 export function useApp() {
-  return useContext(AppContext)
+	return useContext(AppContext);
 }
