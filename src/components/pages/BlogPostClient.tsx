@@ -1,8 +1,8 @@
 "use client";
 
 import { ArrowLeft, Calendar, Clock, Tag, User } from "lucide-react";
-import Image from "@/components/image";
 import Link from "next/link";
+import { img } from "@/lib/img";
 import { useRouter } from "next/navigation";
 import { Animate } from "@/components/ui/Animate";
 import { Badge } from "@/components/ui/Badge";
@@ -42,14 +42,11 @@ export function BlogPostClient({ slug }: { slug: string }) {
 		<div className="bg-dark min-h-screen">
 			{/* Hero */}
 			<div className="relative h-[45vh] min-h-[350px] overflow-hidden flex items-end">
-				<Image
-					src={post.image}
-					alt={post.title}
-					fill
-					className="object-cover"
-					priority
-					sizes="100vw"
-				/>
+			<img
+				src={img(post.image)}
+				alt={post.title}
+				className="object-cover absolute inset-0 w-full h-full"
+			/>
 				<div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/50 to-dark/20" />
 				<Container className="relative z-10 pb-10 pt-24">
 					<button
@@ -197,13 +194,11 @@ export function BlogPostClient({ slug }: { slug: string }) {
 										className="group block no-underline"
 									>
 										<div className="relative h-32 rounded-xl overflow-hidden mb-3">
-											<Image
-												src={rp.image}
-												alt={rp.title}
-												fill
-												className="object-cover group-hover:scale-105 transition-transform duration-700"
-												sizes="33vw"
-											/>
+									<img
+										src={img(rp.image)}
+										alt={rp.title}
+										className="object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0 w-full h-full"
+									/>
 											<div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent" />
 										</div>
 										<h3 className="font-sans font-semibold text-sm text-white group-hover:text-gold transition-colors duration-300 leading-snug">

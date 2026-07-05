@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "@/components/image";
 import { Animate } from "@/components/ui/Animate";
+import { img } from "@/lib/img";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { useApp } from "@/context/AppContext";
@@ -14,14 +14,11 @@ export function AboutClient() {
 		<div className="bg-dark min-h-screen">
 			{/* Hero banner */}
 			<div className="relative h-[35vh] min-h-[300px] overflow-hidden flex items-end">
-				<Image
-					src="/images/tours/cusco-hero.webp"
-					alt="Cusco"
-					fill
-					className="object-cover"
-					priority
-					sizes="100vw"
-				/>
+			<img
+				src={img("/images/tours/cusco-hero.webp")}
+				alt="Cusco"
+				className="object-cover absolute inset-0 w-full h-full"
+			/>
 				<div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/50 to-dark/30" />
 				<Container className="relative z-10 pb-10">
 					<h1 className="font-display text-[clamp(28px,5vw,48px)] font-bold text-white">

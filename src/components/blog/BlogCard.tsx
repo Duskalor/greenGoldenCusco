@@ -1,8 +1,8 @@
 "use client";
 
 import { Calendar, Clock, User } from "lucide-react";
-import Image from "@/components/image";
 import Link from "next/link";
+import { img } from "@/lib/img";
 import { useRouter } from "next/navigation";
 import type { BlogPost } from "@/types";
 import { Animate } from "@/components/ui/Animate";
@@ -26,13 +26,11 @@ export function BlogCard({ post, readMore, delay = 0 }: BlogCardProps) {
 			>
 				{/* Image header */}
 				<div className="relative h-48 overflow-hidden">
-					<Image
-						src={post.image}
-						alt={post.title}
-						fill
-						className="object-cover group-hover:scale-105 transition-transform duration-700"
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-					/>
+				<img
+					src={img(post.image)}
+					alt={post.title}
+					className="object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0 w-full h-full"
+				/>
 					<div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent" />
 					<div className="absolute top-3 left-3 z-10">
 						<Badge variant="outline">{post.category}</Badge>

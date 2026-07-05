@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "@/components/image";
 import { getWhatsAppUrl } from "../../lib/whatsapp";
+import { img } from "@/lib/img";
 import { Animate } from "../ui/Animate";
 import { Button } from "../ui/Button";
 
@@ -27,13 +27,10 @@ export function Hero({ t, onViewTours }: HeroProps) {
 	return (
 		<section className="min-h-screen flex items-center justify-center relative overflow-hidden">
 			{/* Background image — Cusco aerial at dusk */}
-			<Image
-				src="/images/tours/cusco-hero.webp"
+			<img
+				src={img("/images/tours/cusco-hero.webp")}
 				alt="Cusco at dusk"
-				fill
-				className="object-cover"
-				priority
-				sizes="100vw"
+				className="object-cover absolute inset-0 w-full h-full"
 			/>
 			{/* Dark overlay layers */}
 			<div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark/90" />

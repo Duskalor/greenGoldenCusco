@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "@/components/image";
 import { Animate } from "@/components/ui/Animate";
+import { img } from "@/lib/img";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -51,13 +51,11 @@ export function MediaClient() {
 							<Card className="aspect-square relative overflow-hidden group cursor-pointer p-0">
 								{item.src ? (
 									<>
-										<Image
-											src={item.src}
-											alt={item.title}
-											fill
-											className="object-cover group-hover:scale-105 transition-transform duration-700"
-											sizes="(max-width: 768px) 50vw, 33vw"
-										/>
+									<img
+										src={img(item.src)}
+										alt={item.title}
+										className="object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0 w-full h-full"
+									/>
 										<div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent" />
 									</>
 								) : (

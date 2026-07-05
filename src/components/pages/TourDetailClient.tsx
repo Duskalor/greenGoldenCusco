@@ -8,8 +8,8 @@ import {
 	Users,
 	XCircle,
 } from "lucide-react";
-import Image from "@/components/image";
 import { useRouter } from "next/navigation";
+import { img } from "@/lib/img";
 import { Animate } from "@/components/ui/Animate";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
@@ -52,17 +52,14 @@ export function TourDetailClient({ id }: { id: string }) {
 		<>
 			<div className="relative h-[50vh] min-h-[400px] overflow-hidden flex items-end">
 				{/* Hero background image */}
-				<Image
-					src={
-						tourImages[tour.id]?.hero ??
-						"/images/tours/machu-picchu-hero.webp"
-					}
-					alt={tour.name}
-					fill
-					className="object-cover"
-					priority
-					sizes="100vw"
-				/>
+			<img
+				src={img(
+					tourImages[tour.id]?.hero ??
+						"/images/tours/machu-picchu-hero.webp",
+				)}
+				alt={tour.name}
+				className="object-cover absolute inset-0 w-full h-full"
+			/>
 				<div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/50 to-dark/30" />
 				<Container className="relative z-10 pb-10 pt-24">
 					<button
